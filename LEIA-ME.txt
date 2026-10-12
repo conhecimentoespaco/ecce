@@ -1,0 +1,12 @@
+ESPAÇO DO CONHECIMENTO — SITE EDITÁVEL
+
+Ficheiros:
+- index.html: conteúdo e estrutura
+- style.css: cores, tipografia e layout responsivo
+- script.js: menu para telemóveis e ano automático
+
+Para visualizar, extraia o ZIP e abra index.html num navegador.
+Para editar, abra os ficheiros num editor de texto/código.
+Substitua os campos [Inserir ...] pelos contactos reais antes de publicar.
+O site usa Google Fonts quando existe ligação à Internet, com alternativas locais.
+Para publicar, carregue os três ficheiros para o serviço de alojamento escolhido.
