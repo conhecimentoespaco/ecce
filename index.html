@@ -1,24 +1,47 @@
-```html
+
 <!doctype html>
 <html lang="pt-PT">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Espaço do Conhecimento — Transcrições de áudio e vídeo com rigor, experiência, confidencialidade e sigilo desde 2005.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta
+    name="description"
+    content="Espaço do Conhecimento — Transcrições de áudio e vídeo com rigor, experiência, confidencialidade e sigilo desde 2005."
+  >
+
+  <meta name="theme-color" content="#2b3134">
+
   <title>Espaço do Conhecimento | Transcrições</title>
+
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
 
 <header class="header">
-  <a class="brand" href="#inicio">
-    <span class="mark"><i></i><b></b></span>
-    <span>ESPAÇO DO <strong>CONHECIMENTO</strong><small>TRANSCRIÇÕES</small></span>
+  <a class="brand" href="#inicio" aria-label="Espaço do Conhecimento — Início">
+    <span class="mark" aria-hidden="true">
+      <i></i>
+      <b></b>
+    </span>
+
+    <span>
+      ESPAÇO DO <strong>CONHECIMENTO</strong>
+      <small>TRANSCRIÇÕES</small>
+    </span>
   </a>
 
-  <button class="menu" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  <button
+    class="menu"
+    type="button"
+    aria-label="Abrir menu"
+    aria-expanded="false"
+    aria-controls="main-nav"
+  >☰</button>
 
-  <nav>
+  <nav id="main-nav" aria-label="Navegação principal">
     <a href="#servicos">Serviços</a>
     <a href="#sobre">Sobre nós</a>
     <a href="#valores">O nosso compromisso</a>
@@ -28,11 +51,20 @@
 
 <main>
 
-  <section class="hero" id="inicio">
-    <div>
-      <p class="eyebrow"><i></i> TRANSCRIÇÕES · DESDE 2005</p>
+  <!-- APRESENTAÇÃO -->
 
-      <h1>As suas palavras,<br><em>com rigor e confiança.</em></h1>
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+
+      <p class="eyebrow">
+        <i></i>
+        TRANSCRIÇÕES · DESDE 2005
+      </p>
+
+      <h1>
+        As suas palavras,<br>
+        <em>com rigor e confiança.</em>
+      </h1>
 
       <p class="intro">
         Transformamos gravações de áudio e vídeo em textos claros,
@@ -40,23 +72,42 @@
       </p>
 
       <div class="actions">
-        <a class="btn" href="#contactos">Peça informações <b>↗</b></a>
-        <a class="link" href="#servicos">Conheça os serviços ↓</a>
+        <a class="btn" href="#contactos">
+          Peça informações <b aria-hidden="true">↗</b>
+        </a>
+
+        <a class="link" href="#servicos">
+          Conheça os serviços ↓
+        </a>
       </div>
 
-      <p class="proof">● Confidencialidade e sigilo em cada projeto</p>
+      <p class="proof">
+        <span aria-hidden="true">●</span>
+        Confidencialidade e sigilo em cada projeto
+      </p>
+
     </div>
 
-    <div class="art">
+    <div class="art" aria-label="Ilustração alusiva à escrita e à experiência">
       <div class="ring r1"></div>
       <div class="ring r2"></div>
-      <div class="book"><span></span><b></b></div>
+
+      <div class="book" aria-hidden="true">
+        <span></span>
+        <b></b>
+      </div>
+
       <p>01 / EXPERIÊNCIA QUE SE ESCREVE</p>
+
       <strong>2005<span>—</span></strong>
     </div>
   </section>
 
-  <section class="stats">
+
+  <!-- DESTAQUES -->
+
+  <section class="stats" aria-label="Os nossos pontos fortes">
+
     <div>
       <b>20+</b>
       <span>Anos de experiência</span>
@@ -73,14 +124,26 @@
     </div>
 
     <div class="last">
-      Cada palavra<br><em>conta.</em>
+      Cada palavra<br>
+      <em>conta.</em>
     </div>
+
   </section>
 
-  <section class="section" id="servicos">
-    <p class="eyebrow"><i></i> O QUE FAZEMOS</p>
 
-    <h2>O conteúdo da sua gravação.<br><em>Em texto, com clareza.</em></h2>
+  <!-- SERVIÇOS -->
+
+  <section class="section" id="servicos">
+
+    <p class="eyebrow">
+      <i></i>
+      O QUE FAZEMOS
+    </p>
+
+    <h2>
+      O conteúdo da sua gravação.<br>
+      <em>Em texto, com clareza.</em>
+    </h2>
 
     <p class="section-intro">
       Atenção ao detalhe, cuidado com o conteúdo e uma abordagem
@@ -91,50 +154,75 @@
 
       <article>
         <small>01</small>
-        <span class="ico">↳</span>
+
+        <span class="ico" aria-hidden="true">↳</span>
+
         <h3>Transcrição de áudio</h3>
+
         <p>
           Passamos gravações de áudio para texto, com atenção
           à fidelidade e à legibilidade do resultado.
         </p>
+
         <a href="#contactos">Saber mais ↗</a>
       </article>
 
+
       <article class="featured">
         <small>02</small>
-        <span class="ico">▤</span>
+
+        <span class="ico" aria-hidden="true">▤</span>
+
         <h3>Transcrição de vídeo</h3>
+
         <p>
           Transformamos conteúdos falados em texto organizado,
           facilitando a consulta e utilização da informação.
         </p>
+
         <a href="#contactos">Saber mais ↗</a>
       </article>
 
+
       <article>
         <small>03</small>
-        <span class="ico">✳</span>
+
+        <span class="ico" aria-hidden="true">✳</span>
+
         <h3>Projetos à medida</h3>
+
         <p>
           Conte-nos o que precisa. Analisamos cada pedido para
           compreender o conteúdo e os requisitos do trabalho.
         </p>
+
         <a href="#contactos">Fale connosco ↗</a>
       </article>
 
     </div>
   </section>
 
+
+  <!-- SOBRE NÓS -->
+
   <section class="about" id="sobre">
-    <div class="about-art">
+
+    <div class="about-art" aria-label="Espaço do Conhecimento, desde 2005">
       <strong>EC<span>✳</span></strong>
       <small>EXPERIÊNCIA · DESDE 2005</small>
     </div>
 
-    <div>
-      <p class="eyebrow"><i></i> ESPAÇO DO CONHECIMENTO</p>
+    <div class="about-copy">
 
-      <h2>Rigor no trabalho.<br><em>Respeito por cada conteúdo.</em></h2>
+      <p class="eyebrow">
+        <i></i>
+        ESPAÇO DO CONHECIMENTO
+      </p>
+
+      <h2>
+        Rigor no trabalho.<br>
+        <em>Respeito por cada conteúdo.</em>
+      </h2>
 
       <p>
         Desde 2005, a experiência orienta a forma como encaramos
@@ -148,37 +236,50 @@
         pela informação recebida.
       </p>
 
-      <a class="outline" href="#contactos">Fale connosco ↗</a>
+      <a class="outline" href="#contactos">
+        Fale connosco ↗
+      </a>
+
     </div>
   </section>
 
-  <section class="section values" id="valores">
-    <p class="eyebrow"><i></i> O NOSSO COMPROMISSO</p>
 
-    <h2>Quatro princípios.<br><em>Uma forma de trabalhar.</em></h2>
+  <!-- COMPROMISSO -->
+
+  <section class="section values" id="valores">
+
+    <p class="eyebrow">
+      <i></i>
+      O NOSSO COMPROMISSO
+    </p>
+
+    <h2>
+      Quatro princípios.<br>
+      <em>Uma forma de trabalhar.</em>
+    </h2>
 
     <div class="value-grid">
 
       <article>
-        <b>✦</b>
+        <b aria-hidden="true">✦</b>
         <h3>Experiência</h3>
         <p>Conhecimento acumulado desde 2005.</p>
       </article>
 
       <article>
-        <b>↔</b>
+        <b aria-hidden="true">↔</b>
         <h3>Confiança</h3>
         <p>Relações profissionais assentes na responsabilidade.</p>
       </article>
 
       <article>
-        <b>▣</b>
+        <b aria-hidden="true">▣</b>
         <h3>Confidencialidade</h3>
         <p>Respeito pela natureza da informação partilhada.</p>
       </article>
 
       <article>
-        <b>⌑</b>
+        <b aria-hidden="true">⌑</b>
         <h3>Sigilo</h3>
         <p>Discrição em todas as etapas do processo.</p>
       </article>
@@ -186,34 +287,51 @@
     </div>
   </section>
 
+
+  <!-- CONTACTOS -->
+
   <section class="contact" id="contactos">
 
-    <div>
-      <p class="eyebrow"><i></i> VAMOS CONVERSAR</p>
+    <div class="contact-intro">
 
-      <h2>Tem uma gravação<br><em>para transcrever?</em></h2>
+      <p class="eyebrow">
+        <i></i>
+        VAMOS CONVERSAR
+      </p>
+
+      <h2>
+        Tem uma gravação<br>
+        <em>para transcrever?</em>
+      </h2>
 
       <p>
         Entre em contacto para partilhar as suas necessidades
         e obter mais informações sobre o serviço.
       </p>
 
-      <p class="signoff">O seu conteúdo em boas mãos.</p>
+      <p class="signoff">
+        O seu conteúdo em boas mãos.
+      </p>
+
     </div>
 
+
     <div class="contactbox">
+
       <h3>Contactos</h3>
 
-      <div>
-        <b>☎</b>
+      <div class="contact-item">
+        <b aria-hidden="true">☎</b>
+
         <p>
           <small>TELEFONE</small>
           <a href="tel:+351918693619">+351 918 693 619</a>
         </p>
       </div>
 
-      <div>
-        <b>✉</b>
+      <div class="contact-item">
+        <b aria-hidden="true">✉</b>
+
         <p>
           <small>E-MAIL</small>
           <a href="mailto:conhecimento.espaco@gmail.com">
@@ -222,11 +340,16 @@
         </p>
       </div>
 
-      <div>
-        <b>◎</b>
+      <div class="contact-item">
+        <b aria-hidden="true">◎</b>
+
         <p>
           <small>WEBSITE</small>
-          [Inserir endereço do site]
+          <a
+            href="https://espacoconhecimento.pt"
+            target="_blank"
+            rel="noopener noreferrer"
+          >espacoconhecimento.pt</a>
         </p>
       </div>
 
@@ -235,21 +358,26 @@
 
 </main>
 
+
+<!-- RODAPÉ -->
+
 <footer>
+
   <a class="footerbrand" href="#inicio">
     ESPAÇO DO <strong>CONHECIMENTO</strong>
     <small>TRANSCRIÇÕES</small>
   </a>
 
-  <p>Experiência, rigor e confiança em cada transcrição.</p>
+  <p>
+    Experiência, rigor e confiança em cada transcrição.
+  </p>
 
   <span>
-    © <b id="year">2026</b> Espaço do Conhecimento — Transcrições
+    © <b id="year">2026</b>
+    Espaço do Conhecimento — Transcrições
   </span>
-</footer>
 
-<script src="script.js"></script>
+</footer>
 
 </body>
 </html>
-```
